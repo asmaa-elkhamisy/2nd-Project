@@ -1,0 +1,508 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    perspective: 700px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+/***************** Header ******************/
+.container{
+    width: 80%;
+    margin: auto;
+}
+.header-content{
+    width: 100%;
+    position: relative;
+    /* overflow: auto; */
+}
+nav{
+    margin: 50px auto 0 77px;
+    width: 60%;
+}
+.main-li{
+    float: left;
+    margin-left: 20px;
+}
+.li1:hover .jewelry-list{
+    transform: scale(1);
+}
+.nav-a{
+    color: #7b7a7a;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 7px 10px 4px 10px;
+    position: relative;   
+}
+.nav-a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-top: 2px solid #7b7a7a;
+    border-bottom: 2px solid #7b7a7a;
+    transition: 0.3s;
+}
+.nav-a:hover::before{
+    width: 100%;
+    opacity: 1;
+}
+.nav-a::after{
+    content: "";
+    position: absolute;
+    right:0;
+	top:0;
+	width:0;
+	height:0;
+    box-sizing: border-box;
+    border-left: 2px solid #7b7a7a;
+    border-right: 2px solid #7b7a7a;
+}
+.nav-a:hover::after{
+    width: 100%;
+    height: 36px;
+}
+.li1{
+    position: relative;
+}
+/******************** inside-ul *******************/
+
+.inside-ul{
+    float: left;
+}
+.jewelry-list{
+    box-shadow: 0px 0px 8px 3px #c5c4c4;
+    /* border-radius: 4px; */
+    background-color: white;
+    position: absolute;
+    transform: scale(0);
+    transition: all .5s;
+    width: 380px;
+    height: 155px;
+    margin-top: 15px;
+    padding: 7px 10px ;
+    overflow: auto;
+}
+.iu{
+    margin: auto 25px;
+}
+.inside-span{
+    color: rgb(124, 122, 122);
+    font-weight: bold; 
+}
+.jewelry-a{
+    color: rgb(124, 122, 122) ;
+    display: block;
+}
+.ja{
+    padding-top: 10px;
+}
+.jewelry-a:hover{
+    color: rgb(224, 130, 165);
+}
+.sale{
+    color:rgb(224, 130, 165) ;
+    font-size: 17px;
+}
+.sa4{
+    color:rgb(224, 130, 165) ;
+    font-size: 30px;
+}
+.sale4{
+    margin-top: -15px;
+}
+.read{
+    color: rgb(124, 122, 122) ;
+}
+.read:hover{
+    color: rgb(224, 130, 165);
+}
+.right-icons , nav , .header-img{
+    float: left;
+}
+.right-icons{
+    position: absolute;
+    left: 79%;
+    top: 40px;
+    font-size: 28px;
+    width: 25%;
+}
+.user{
+    margin: auto 15px;
+}
+.cart-number{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(169, 90, 102);
+    font-size: 15px;
+    text-align: center;
+    margin: -20px auto auto 126px;
+    position: relative;
+}
+.cart-number span{
+    display: block;
+    position: absolute;
+    left: 6px;
+}
+.bag{
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    margin: -20px auto auto 146px;
+}
+
+/************************ First Section ***************************/
+.w-j{
+    margin: -160px auto auto 20px;
+}
+.w-j h1{
+    font-size: 50px;
+    color: rgb(246, 245, 242);
+    font-family: 'Gill Sans', 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+.w-j button{
+    margin:  20px 85px;
+    width: 140px;
+    height: 40px;
+    font-size: 17px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(168, 164, 164);
+    color: rgb(245, 244, 244);
+}
+/********************** Second Section **********************/
+/*******************************/
+.sp{
+    text-align: center;
+    margin-top: 90px;
+    color: #6b6868;
+    font-size: 33px;
+}
+.line{
+    width: 90px;
+    height: 2px;
+    background-color: rgb(72, 69, 69);
+    border-radius: 10px;
+    margin:5px auto;
+    transition: all .5s;
+}
+.line:hover{
+    width: 150px;
+}
+/*******************************/
+.second-section-content{
+    overflow: auto;
+    margin-top: 20px;
+}
+.second-section-content-1{
+    float: left;
+    width: 24.25%;
+    position: relative;
+}
+.ssc1{
+    margin: auto 0.5% auto 1%;
+}
+.ssc2{
+    margin: auto 1% auto 0.5%;
+}
+.second-section-content-1 span{
+    display: block;
+    margin-top: 18px;
+    color: #c7c2c2;
+    font-weight: bold;
+}
+.second-section-content-1 h2{
+    font-size: 20px;
+    color: #424141;
+}
+.second-section-content-1 i{
+    width: 27px;
+    height: 27px;
+    background-color: rgb(169, 90, 102);
+    color: white;
+    font-size: 19px;
+    line-height: 27px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+    opacity: 0;
+}
+.second-section-content-1:hover i{
+    opacity: 1;
+}
+/****************** Third Section *******************/
+.third-section-content{
+    margin-top: 30px;
+}
+.third-right-div{
+    width: 50%;
+    height: 280px;
+    background-color: rgb(247, 233, 233);
+    padding: 20px ;
+    position: relative;
+    float: left;
+}
+.third-right-div h3{
+    display: inline-block;
+    font-size: 23px;
+    color: #5c5959;
+    position: absolute;
+    top: 15px;
+    left: 70px;
+}
+.third-right-div i{
+    font-size: 40px ;
+    color: rgb(153, 148, 148);
+}
+.third-right-div p{
+    margin-top: 20px;
+    font-size: 17px;
+    color: #474646;
+}
+.third-right-div span{
+    position: absolute;
+    top: 40px;
+    left: 70px;
+}
+.three-divs{
+    overflow: auto;
+    position: absolute;
+    right: 13px;
+    bottom: 25px;
+}
+.three-divs-1{
+    width: 50px;
+    height: 1.5px;
+    background-color: rgb(168, 164, 164);
+    border-radius: 10px;
+    float: left;   
+}
+.td1{
+    margin: auto 8px;
+}
+
+.third-left-div{
+    width: 23%;
+    float: left;
+    margin-left: 2%;
+    position: relative;
+    transition: all .5s;
+}
+.third-left-div span{
+    position: absolute;
+    color: #7b7a7a;
+    font-size: 23px;
+    bottom: 40px;
+    left: 10px;
+}
+.third-left-div h3{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+.third-left-div:hover{
+    transform: scale(1.1);
+}
+/********************* 4th Section *****************************/
+.section4-content{
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    overflow: auto;
+}
+.free-delivery{
+    float: left;
+    width: 20%;
+    text-align: center;
+    border-right: 1px solid #7b7a7a;
+}
+.free-delivery-con h4{
+    color: #555353;
+}
+.free-delivery-con span{
+    color: #999898;
+}
+.moving-image{
+    width: 40px;
+    height: 50px;
+    margin: 10px auto;
+    background: url(../images/moving-img2.png) no-repeat;
+    background-size: cover;
+    transition: all 0.5s;
+}
+.mi1{
+    background-position: center 2px;
+
+}
+.free-delivery:hover .mi1{
+    background-position: center -90px;
+}
+.mi2{
+    background-position: center -175px;
+}
+.free-delivery:hover .mi2{
+    background-position: center -262px;
+}
+.mi3{
+    background-position: center -350px;
+}
+.free-delivery:hover .mi3{
+    background-position: center -440px;
+}
+.mi4{
+    background-position: center -526px;
+}
+.free-delivery:hover .mi4{
+    background-position: center -615px;
+}
+.mi5{
+    background-position: center -708px;
+}
+.free-delivery:hover .mi5{
+    background-position: center -795px;
+}
+/************************* 5th Section ****************************/
+.featured-products{
+    padding: 30px 0px;
+    text-align: center;
+}
+.featured-products span{
+    padding: 10px;
+    font-size: 20px;
+    color: #7b7a7a;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+.featured-products span:hover{
+    color: rgb(224, 130, 165);
+}
+.rings{
+    width: 100%;
+    height: 500px;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+.rings-content{
+    float: left;
+    width: 30%;
+    position: relative;
+}
+.front{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+}
+.front-img{
+    transition: all .5s;
+    transform-style: preserve-3d;  
+}
+.front:hover .front-img{
+    transform: scale(0);
+}
+.rc-1{
+    margin: auto 5%;
+}
+.back-content{
+    position: relative;
+}
+.back-icons{
+    position: absolute;
+    top: 85%;
+    left: 27%;
+}
+.back-icons i{
+    background-color: #999898;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+}
+.front-icons{
+    margin: 10px 0px 5px;
+    color: rgb(169, 90, 102);
+    font-size: 12px;
+}
+.front h4{
+    color: #545353;
+    font-size: 15px;
+}
+.front span{
+    color: rgb(169, 90, 102);
+    font-size: 20px;
+    font-weight: bold;
+}
+.front span del{
+    font-weight: 500;
+    color: #5c5959;
+    font-size: 15px ;
+}
+
+/********************** Footer ********************/
+.last-section{
+    width: 100%;
+    height: 350px;
+    background-color: #494848;
+}
+.last-section-content{
+    overflow: auto;
+    padding-top: 50px;
+    margin-left: 13%;
+}
+.last-section-1{
+    float: left;
+    width: 25%;
+    color: #ffffff;
+}
+.ls1{
+    margin: auto 6%;
+}
+.last-section-1 h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    transition: all 1s;
+}
+.last-section-1 h1:hover{
+    color: rgb(224, 130, 165) ;
+}
+.last-section-1 p{
+    line-height: 30px;
+    margin-top: 25px;
+    letter-spacing: 2px;
+}
+.last-section-1 span{
+    margin: 20px 0px 0px 15px;
+}
+.last-section-1 i{
+    margin-top: 20px;
+    color: #b7b7b7;
+}
+.last-section-1 span a{
+    color: #ffffff;
+    transition: all 1s;
+}
+.last-section-1 span a:hover{
+    color: rgb(224, 130, 165);
+}
+.ls2{
+    height: 290px;
+}
+.last-section-1 img{
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 10px #636262;
+}
